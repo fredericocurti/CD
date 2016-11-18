@@ -1,0 +1,426 @@
+.profile {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.0),
+      rgba(00, 00, 00, 0.0), 
+      rgba(00, 00, 00, 0.0),
+      rgba(00, 00, 00, 0.0),
+      rgba(00, 00, 00, 0.0), 
+      rgba(00, 00, 00, 0.0), 
+      rgba(255, 255, 255, 0.1), 
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.9)
+    ), url(../Fotos/mountain.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding-bottom: 5%;
+    padding-top: 10%;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.parallax-container {
+    height: 200px;
+}
+
+.parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 50%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.white-text {
+    color: white;
+}
+
+.bring-up {
+    z-index: 100;
+}
+
+.adobe-yellow {
+    background-color: #FFA424 !important;
+}
+
+.adobe-dark-yellow {
+    background-color: #B26C07 !important;
+}
+
+.adobe-light-yellow {
+    background-color: #FFBB5B !important;
+}
+
+.adobe-blue {
+    background-color: #006DB2 !important;
+}
+
+.adobe-light-blue {
+    background-color: #24A9FF !important;
+}
+
+.navy-blue {
+    background-color: #18121E !important;
+}
+
+.gunmetal {
+    background-color: #233237 !important;
+}
+
+.rusty-red {
+    background-color: #984B43 !important;
+}
+
+.warm-yellow {
+    background-color: #EAC67A !important;
+}
+
+.all-margin-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.all-padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bottom-margin-40 {
+    margin-bottom: 40px;
+}
+
+.margin-40 {
+    margin-top: 40px;
+}
+
+.padding-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.top-padding-40 {
+    padding-top: 40px;
+}
+
+.top-padding-20 {
+    padding-top: 20px;
+}
+
+.bottom-padding-20 {
+    padding-bottom: 20px;
+}
+
+.backdestaque-1 {
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.2),
+      rgba(00, 00, 00, 0.2), 
+      rgba(00, 00, 00, 0.2) 
+    ), url(../Fotos/destaques/software.png); 
+    background-size: cover; 
+    background-position: center;
+
+}
+
+.backdestaque-2 {
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.2),
+      rgba(00, 00, 00, 0.2), 
+      rgba(00, 00, 00, 0.2) 
+    ), url(../Fotos/destaques/hardware.png); 
+    background-size: cover; 
+    background-position: center;
+
+}
+
+.backdestaque-3 {
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.2),
+      rgba(00, 00, 00, 0.2), 
+      rgba(00, 00, 00, 0.2) 
+    ), url(../Fotos/destaques/modelagem.png); 
+    background-size: cover; 
+    background-position: center;
+
+}
+
+.backdestaque-4 {
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.2),
+      rgba(00, 00, 00, 0.2), 
+      rgba(00, 00, 00, 0.2) 
+    ), url(../Fotos/destaques/conceituais.png); 
+    background-size: cover; 
+    background-position: center;
+
+}
+
+.cardProject1 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/destaques/software.png);
+    background-size: cover; 
+    background-position: center;
+}
+
+.cardProject2 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/destaques/hardware.png);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject3 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/destaques/modelagem.png);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject4 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/destaques/conceituais.png);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject5 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/conceito.jpg);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject6 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/jogodavelha.png);
+    background-size: cover; 
+    background-position: center
+}
+
+
+.cardProject7 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/crud.png);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject8 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/brinquedo.jpg);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject9 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/barata.jpg);
+    background-size: cover; 
+    background-position: center
+}
+.cardProject10 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/amp.jpg);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject14 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/coolerout.png);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject15 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/aquecimentochuveiro.png);
+    background-size: cover; 
+    background-position: center
+}
+    
+.cardProject16 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/tubaroes.png);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject17 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/estacao_petroleo.jpg);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject18 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/khun.jpeg);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject19 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/nasa.jpg);
+    background-size: cover; 
+    background-position: center
+}
+
+.cardProject20 {
+
+    background: linear-gradient(
+      rgba(00, 00, 00, 0.3),
+      rgba(00, 00, 00, 0.5), 
+      rgba(00, 00, 00, 0.3)),
+      url(../Fotos/tubaroes.png);
+    background-size: cover; 
+    background-position: center
+}
+
+
+
+.cardP {
+    height: 200px;
+}
+/*
+.cardContent {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 200px;
+}*/
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 250px;
+}
+
+.col.s6.m4 {
+    padding: 0.75rem 0.75rem;
+}
+
+.textP {
+    font-weight: 400;
+}
+
+.sidePad {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.imgWhite {
+  color: #FFFFFF;
+}
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}

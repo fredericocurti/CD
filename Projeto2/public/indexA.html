@@ -1,0 +1,622 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+    <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCklwhzRE5tn_eaSA0kMBAib0Wm9DwAlxs",
+    authDomain: "teste-ab-portfolio-de-projetos.firebaseapp.com",
+    databaseURL: "https://teste-ab-portfolio-de-projetos.firebaseio.com",
+    storageBucket: "teste-ab-portfolio-de-projetos.appspot.com",
+    messagingSenderId: "1029953764861"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+    <script> versao = "A" </script>
+    <script> projeto = "amplificador" </script> 
+    <script src="scripts/main.js"></script>
+
+		<!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="css/owl.carousel.css">
+
+		<title>Página Principal</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Compiled and minified CSS -->
+  		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"> -->
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body class="white darken-1" onload="tempo_inicial();">
+    <script src="client.min.js"></script>
+      <script>
+        var client = new ClientJS();
+        var id_pessoa = client.getFingerprint();
+
+      </script>  
+		<div id="home" class="profile scrollspy">
+
+			<div class="container">
+            
+
+				<div class="row">
+					<img src="Fotos/perfil.jpg" class="circle col s8 m6 l4 offset-s2 offset-m3 offset-l4 center-align no-padding z-depth-2">
+					
+				</div>
+				<div class="row no-margin">
+					<h3 class="col s10 l6 offset-s1 offset-l3 center-align white-text">Guilherme Moraes</h3>
+				</div>
+				<div class="row no-margin">
+					<h5 class="col s6 offset-s3 center-align white-text">Estudante do Insper</h5>
+				</div>
+			</div>
+		</div>
+
+        
+		<nav id="sticker" class="no-padding bottom-margin-40">
+	   		<div class="nav-wrapper navy-blue z-depth-2">
+		      		
+	      		<ul id="nav-mobile" class="row bottom-margin-40">
+		        	<li class="col s4 l2 offset-l1 center-align"><a href="#home">HOME</a></li>
+                    <li class="col s4 l2 offset-l2 center-align"><a href="#sobre-mim">SOBRE</a></li>
+		        	<li class="col s4 l2 offset-l2 center-align"><a href="#projetos">PROJETOS</a></li>
+	      		</ul>
+    		</div>
+ 		</nav>
+        
+        <!--
+        <div id="sticker" class="row">
+            <div class="col s12 no-padding z-depth-1">
+                <ul class="tabs">
+                    <li class="tab col s4"><a href="#home">HOME</a></li>
+                    <li class="tab col s4"><a href="#projetos">PROJETOS</a></li>
+                    <li class="tab col s4"><a href="#sobre-mim">SOBRE</a></li>
+                </ul>
+            </div>
+        </div>
+        -->
+        <div class="grey lighten-4 all-padding-100">
+            <div id="sobre-mim" class="container scrollspy">
+                <h2 class="no-margin bottom-margin-40">Sobre mim</h2>
+                <div class="col s12 m9">
+                    <div class="card horizontal">
+                        <div class="card-image hide-on-small-only">
+                            <img src="Fotos/bio.png" class="circle col">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p>
+                                    Essa é uma bio curta sobre mim, ela conta um pouco sobre o que eu faço, minhas
+                                    origens, meus interesses e afins. Essa é uma bio curta sobre mim, ela conta um pouco sobre o que eu faço, minhas
+                                    origens, meus interesses e afins. Essa é uma bio curta sobre mim, ela conta um pouco sobre o que eu faço, minhas
+                                    origens, meus interesses e afins. Essa é uma bio curta sobre mim, ela conta um pouco sobre o que eu faço, minhas
+                                    origens, meus interesses e afins. Essa é uma bio curta sobre mim, ela conta um pouco sobre o que eu faço, minhas
+                                    origens, meus interesses e afins.
+                                </p>
+                            </div>
+                            
+                            <div class="card-action">
+                                <a href="#">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--
+        <div class="container row">
+            <div id="owl-demo" class="owl-carousel ">
+                <div class="item green darken-2"><h1>1</h1></div>
+                <div class="item green darken-2"><h1>2</h1></div>
+                <div class="item green darken-2"><h1>3</h1></div>
+                <div class="item green darken-2"><h1>4</h1></div>
+                <div class="item green darken-2"><h1>5</h1></div>
+                 <div class="item"><h1>6</h1></div>
+                <div class="item"><h1>7</h1></div>
+                <div class="item"><h1>8</h1></div>
+                <div class="item"><h1>9</h1></div>
+                <div class="item"><h1>10</h1></div>
+                <div class="item"><h1>11</h1></div>
+                <div class="item"><h1>12</h1></div>
+                <div class="item"><h1>13</h1></div>
+                <div class="item"><h1>14</h1></div>
+                <div class="item"><h1>15</h1></div>
+                <div class="item"><h1>16</h1></div> 
+            </div>
+
+            <div class="customNavigation">
+                <a class="btn prev">Previous</a>
+                <a class="btn next">Next</a>
+                <a class="btn play">Autoplay</a>
+                <a class="btn stop">Stop</a>
+            </div>
+        </div>
+
+        <div class="owl-carousel">
+            <a href="Projeto.html">
+                <div class="item card">
+                    <div class="card col s3 offset-s1 hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="Fotos/ponte.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Projeto Legal</span>
+                            <p class="no-padding">O Projeto Legal é muito legal. Mais legal do que você pensa!</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+-->
+  		<div class="container">
+
+            <!--
+			<a class="waves-effect waves-teal btn-flat">Home</a>
+			<a class="waves-effect waves-teal btn-flat">Projetos</a>
+			<a class="waves-effect waves-teal btn-flat">Sobre Mim</a><br><br>
+            
+			<div class="row">
+				<div class="card col s12 m4 l3">
+				    <div class="card-image waves-effect waves-block waves-light">
+				    	<img class="activator" src="Fotos/insperPNG.png">
+				    </div>
+					<div class="card-content">
+					    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+					    <p>Descrição</p>
+					</div>
+					<div class="card-reveal">
+					    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+				    </div>
+			  	</div>
+			  	<div class="card col s12 m4 l3 offset-l1">
+				    <div class="card-image waves-effect waves-block waves-light">
+				    	<img class="activator" src="Fotos/insperPNG.png">
+				    </div>
+					<div class="card-content">
+					    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+					    <p>Descrição</p>
+					</div>
+					<div class="card-reveal">
+					    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+				    </div>
+			  	</div>
+			  	<div class="card col s12 m4 l3 offset-l1">
+				    <div class="card-image waves-effect waves-block waves-light">
+				    	<img class="activator" src="Fotos/insperPNG.png">
+				    </div>
+					<div class="card-content">
+					    <span class="card-title activator grey-text text-darken-4">Card Title</span>
+					    <p>Descrição</p>
+					</div>
+			  	</div>
+		  	</div>
+            -->
+
+			
+        </div>
+        <div class="divider"></div>
+        <!--
+        <div class="parallax-container margin-40">
+            <div class="parallax"><img src="Fotos/nature.jpg" width="2000" height="1600"></div>
+        </div>
+        -->
+
+            <!--<div class="section white">
+                  <div class="row container">
+                      <h2 class="header">Parallax</h2>
+                      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+                  </div>
+            </div>
+            <div class="parallax-container">
+                  <div class="parallax"><img src="Fotos/ponte.jpg"></div>
+            </div> -->
+
+        <div class="white">
+            <div class="container all-margin-100">
+                
+
+                <div id="projetos" class="scrollspy margin-40">
+                    <h2 class="bottom-margin-40">
+                        Projetos
+                    </h2>
+
+
+                    <div class="sidePad">
+
+                        <h4  class="bottom-margin-40">
+                            Destaques
+                        </h4>
+
+                        <div class="carousel carousel-slider center bottom-margin-40" data-indicators="true">
+
+                            <div class="carousel-item white-text backdestaque-1">
+                                <h2>Tug War</h2>
+                                <p class="white-text"></p>
+                                <div class="carousel-fixed-item center">
+                                    <a class="btn waves-effect white grey-text darken-text-2" href="projetosoftware.html">Ir Para Projeto</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item white-text backdestaque-2">
+                                <h2>Estação Meteriológica</h2>
+                                <p class="white-text"></p>
+                                <div class="carousel-fixed-item center">
+                                    <a class="btn waves-effect white grey-text darken-text-2" href="projetohardware.html">Ir Para Projeto</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item white-text backdestaque-3">
+                                <h2>Simulação de Sistema Físico</h2>
+                                <p class="white-text"></p>
+                                <div class="carousel-fixed-item center">
+                                    <a class="btn waves-effect white grey-text darken-text-2" href="projetomodelagem.html">Ir Para Projeto</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item white-text backdestaque-4">
+                                <h2>Análise Estatística</h2>
+                                <p class="white-text"></p>
+                                <div class="carousel-fixed-item center">
+                                    <a class="btn waves-effect white grey-text darken-text-2" href="projetoconceituais.html">Ir Para Projeto</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--
+                    <ul class="collection">
+                        <li><a href="Software.html" class="collection-item">Software</a></li>
+                        <li><a href="Hardware.html" class="collection-item">Hardware</a></li>
+                        <li><a href="ModSim.html" class="collection-item">Simulação e Modelagem</a></li>
+                        <li><a href="Conceituais.html" class="collection-item">Conceituais</a></li>
+                    </ul> -->
+            
+                        <h4  class="margin-40 top-padding-40">
+                            Todos os Projetos
+                        </h4>
+
+                        <ul class="collapsible margin-40 bottom-margin-40" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">code</i>Software
+                                </div>
+                                <div class="collapsible-body grey lighten-3">
+
+                                    <div class="row no-margin top-padding-20 bottom-padding-20 sidePad">
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject1 cardP hoverable">
+                                                <a href="projetosoftware.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Tug War</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject7 cardP hoverable">
+                                                <a href="crud.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">CRUD</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject5 cardP hoverable">
+                                                <a href="conceito.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Cálculo do Conceito</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject6 cardP hoverable">
+                                                <a href="jogodavelha.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Jogo da Velha</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                     <!--    <div class="col s6 m4">
+                                            <div class="no-margin card cardProject4 cardP hoverable">
+                                                <a href="projetosoftware.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Protótipo de Website</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="col s6 m4">
+                                            <div class="no-margin card cardProject4 cardP hoverable">
+                                                <a href="projetosoftware.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Protótipo de Aplicativo</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div> -->
+
+
+                            </li>
+
+
+
+
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">dns</i>Hardware</div>
+                                <div class="collapsible-body grey lighten-3">
+                                    <div class="row no-margin sidePad top-padding-20 bottom-padding-20">
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject2 cardP hoverable">
+                                                <a href="projetohardware.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Estação Metereológica</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject8 cardP hoverable">
+                                                <a href="brinquedo.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Brinquedo Infantil</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject9 cardP hoverable">
+                                                <a href="barata.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Barata Elétrica</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject10 cardP hoverable">
+                                                <a href="obrigado.html" onclick="tempo_final();">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Amplificador de som</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">play_circle_outline</i>Simulação e Modelagem</div>
+                                <div class="collapsible-body grey lighten-3">
+                                    <div class="row no-margin sidePad top-padding-20 bottom-padding-20">
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject14 cardP hoverable">
+                                                <a href="Coolers.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Sistema Termodinâmico/ Farmacocinético</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject16 cardP hoverable">
+                                                <a href="dinamicapop.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Dinâmica Populacional</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject3 cardP hoverable">
+                                                <a href="projetomodelagem.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Sistema Mecânico</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject15 cardP hoverable">
+                                                <a href="aquecimentochuveiro.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Sistema de Aquecimento de Chuveiro Elétrico</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject17 cardP hoverable">
+                                                <a href="petroleo.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Rede de Destribuição de Petróleo</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">library_books</i>Conceituais</div>
+                                <div class="collapsible-body grey lighten-3">
+                                    <div class="row no-margin sidePad top-padding-20 bottom-padding-20">
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject18 cardP hoverable">
+                                                <a href="artigo.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Artigo</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject19 cardP hoverable">
+                                                <a href="application.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Application Singularity</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+<!-- 
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject4 cardP hoverable">
+                                                <a href="projetosoftware.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Matemática da Variação</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div> -->
+                                        <div class="col s6 m4">
+                                            <div class="no-margin card cardProject4 cardP hoverable">
+                                                <a href="projetoconceituais.html">
+                                                    <div class="outer">
+                                                        <div class="middle">
+                                                            <div class="ïnner">
+                                                                <h4 class="no-margin center-align white-text flow-text textP">Ciência dos Dados</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                <script type="text/javascript" src="js/materialize.min.js"></script>
+                
+                <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+                <script type="text/javascript" src="js/jquery.sticky.js"></script>
+                <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+                <script type="text/javascript" src="js/ani.js"></script>
+            </div>
+        </div>
+
+	    <footer class="page-footer blue-grey darken-2">
+	    	<div class="container">
+	    		<h5 class="grey-text text-lighten-3">
+	    			Contato
+	    		</h5>
+	    		<p class="grey-text text-lighten-3">
+	    			+55 (11) 91212-9912 / (11) 91212-9912<br>
+                    guilhermems4@insper.al.edu.br
+	    		</p>
+                <a href="http://www.facebook.com/guilherme.guigs">
+                    <img src="Fotos/facebook.png" width=40 class="imgWhite">
+                </a>
+                <a href="http://www.github.com/guigs10mil">
+                    <img src="Fotos/git.png" width=40>
+                </a>
+	    	</div>
+	    	<br>
+			<div class="footer-copyright">
+		        <div class="container">
+			        © 2016 CoDesign A6
+		        </div>
+	        </div>
+        </footer>
+	</body>
+</html>
